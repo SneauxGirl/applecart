@@ -1,7 +1,15 @@
+//GENERAL STYLES
+body{
+    font-family: 'SF Display Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 // Currently files are _cart, etc
-@import './cart.scss';
-@import './checkout.scss';
-@import './footer.scss';
-@import './header.scss';
-@import './store.scss';
-@import './toast.scss';
+@import 'cart';
+@import 'checkout';
+@import 'footer';
+@import 'header';
+@import 'store';
+@import 'toast';
