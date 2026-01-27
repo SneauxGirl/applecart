@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/scss/style.scss"> <!-- During Development -->
+    <link rel="stylesheet" href="/dist/style.css"> <!-- During Production -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>AppleCart</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header_content">
+            <h1 class="header_title"></h1>
+            <div class="header_checkout">
+                <a href="#" class="header__checkout-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="header__checkout-count">0</span>
+                </a>
+            </div>
+        </div>
+        <!-- MINI-BASKET PREVIEW -->
+         <div class="header__cart-preview">
+            <ul class="header__cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <p class="header__cart-total">Total: $<span class="header__cart-total-amount">0.00</span></p>
+            <button class="header__clear-cart-button"><i class="fas fa-trash"> Clear Basket</i></button>
+            <a href="#" class="header__view-cart-button"><i class="fas fa-shopping-cart"></i> View Cart</a>
+         </div>
+    </header>
+</body>
+</html>
