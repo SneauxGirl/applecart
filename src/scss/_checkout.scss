@@ -14,7 +14,7 @@
         align-items: center;
     }
 
-    &__increase-btn;
+    &__increase-btn,
     &__decrease-btn {
         margin-left: 10px;
         padding: 0.2rem 0.5rem;
@@ -27,6 +27,7 @@
         background: #0056b3;
         }
     }
+    
     &__total {
         margin-top: 1rem;
         font-weight: bold;

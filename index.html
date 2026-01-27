@@ -11,24 +11,24 @@
 <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="header_content">
-            <h1 class="header_title"></h1>
-            <div class="header_checkout">
+        <div class="header__content">
+            <h1 class="header__title">Apple Cart</h1>
+            <div class="header__checkout">
                 <a href="#" class="header__checkout-link">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="header__checkout-count">0</span>
                 </a>
+                <!-- MINI-BASKET PREVIEW -->
+                <div class="header__cart-preview">
+                    <ul class="header__cart-items">
+                        <!-- Cart items will be dynamically added here -->
+                    </ul>
+                    <p class="header__cart-total">Total: $<span class="header__cart-total-amount">0.00</span></p>
+                    <button class="header__clear-cart-button"><i class="fas fa-trash"> Clear Basket</i></button>
+                    <a href="#" class="header__view-cart-button"><i class="fas fa-shopping-cart"></i> View Cart</a>
+                </div>
             </div>
         </div>
-        <!-- MINI-BASKET PREVIEW -->
-         <div class="header__cart-preview">
-            <ul class="header__cart-items">
-                <!-- Cart items will be dynamically added here -->
-            </ul>
-            <p class="header__cart-total">Total: $<span class="header__cart-total-amount">0.00</span></p>
-            <button class="header__clear-cart-button"><i class="fas fa-trash"> Clear Basket</i></button>
-            <a href="#" class="header__view-cart-button"><i class="fas fa-shopping-cart"></i> View Cart</a>
-         </div>
     </header>
     <!-- STORE -->
     <main class="store">
@@ -36,12 +36,15 @@
             <!-- Products will be dynamically added here -->
         </section>
     </main>
+
+    <!-- FOOTER -->
     <footer class="footer">
         <p>&copy; <span id="year"></span> Apple Store. All rights reserved.</p>
     </footer>
+
     <!-- SCRIPTS -->
-     <script type="module" src="/src/data/products.js"></script>
-     <script type="module" src="/src/js/script.js"></script>
+    <script type="module" src="/src/data/products.js"></script>
+    <script type="module" src="/src/js/script.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const yearSpan = document.getElementById("year");
