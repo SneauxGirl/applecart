@@ -14,4 +14,4 @@ Features flexbox responsive flow, add to cart, remove from cart, and increase/de
 
 ## Credit
 Built by Heather Hugo.  
-Inspired by thehashton's [Apple Cart UI](https://github.com/thehashton/applecart-ui)
+Inspired by thehashton's [Apple Cart UI](https://github.com/thehashton/applecart-ui).
